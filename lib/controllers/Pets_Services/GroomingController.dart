@@ -5,8 +5,8 @@ import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:pet_cares_system/views/AppointmentScreens/AppointmentScreen.dart';
 import 'package:pet_cares_system/views/Dashboard/GroomingScreen.dart';
 
-import '../Utils/Models/Doctor.dart';
-import '../Utils/Models/GroomingService.dart';
+import '../../Utils/Models/Doctor.dart';
+import '../../Utils/Models/GroomingService.dart';
 
 class GroomingController extends GetxController {
   final RxList<GroomingService> services = RxList<GroomingService>();

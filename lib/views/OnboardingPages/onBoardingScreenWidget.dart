@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:pet_cares_system/WidgetCommon/Button.dart';
 import '../../Utils/Models/OnboardingModel.dart';
-import '../../controllers/OnboardingController.dart';
+import '../../controllers/views_Controllers/OnboardingController.dart';
 
 class OnboardingScreen extends StatelessWidget {
   final OnboardingController controller = Get.put(OnboardingController());

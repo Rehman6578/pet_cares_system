@@ -1,7 +1,7 @@
 // doctor_controller.dart
 import 'package:get/get.dart';
 
-import '../Utils/Models/Doctor.dart';
+import '../../Utils/Models/Doctor.dart';
 
 class DoctorController extends GetxController {
   var selectedDate = DateTime.now().obs;

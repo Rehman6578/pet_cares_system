@@ -1,8 +1,8 @@
 
 import 'package:get/get.dart';
 
-import '../Utils/Models/ClinicsModel.dart';
-import '../Utils/Models/Doctor.dart';
+import '../../Utils/Models/ClinicsModel.dart';
+import '../../Utils/Models/Doctor.dart';
 
 
 class Clinics extends GetxController {

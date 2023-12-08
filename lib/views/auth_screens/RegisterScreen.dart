@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pet_cares_system/WidgetCommon/Button.dart';
 import 'package:pet_cares_system/WidgetCommon/My_Text_Field.dart';
-import 'package:pet_cares_system/controllers/SignupController.dart';
+import 'package:pet_cares_system/controllers/auth_Controllers/SignupController.dart';
 import 'package:pet_cares_system/user_auth/firebase_auth_implementation/firebase_auth_service.dart';
 import 'Login.dart';
 import 'LoginScreen.dart';

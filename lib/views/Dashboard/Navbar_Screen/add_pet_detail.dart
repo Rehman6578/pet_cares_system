@@ -6,9 +6,9 @@ import '../../../controllers/FriendlyDogController.dart';
 import '../../../controllers/FriendlyKidsAboveTenController.dart';
 import '../../../controllers/FriendlyKidsBeloweTenController.dart';
 import '../../../controllers/InformationController.dart';
-import '../../../controllers/MicroChipController.dart';
+import '../../../controllers/views_Controllers/MicroChipController.dart';
 import '../../../controllers/PureBredController.dart';
-import '../../../controllers/VaccinatedController.dart';
+import '../../../controllers/Pets_Services/VaccinatedController.dart';
 
 class AddPetDetail extends StatefulWidget {
   const AddPetDetail({Key? key}) : super(key: key);

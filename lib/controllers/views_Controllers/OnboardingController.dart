@@ -6,7 +6,7 @@ import 'package:get/get_rx/src/rx_types/rx_types.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:pet_cares_system/const/images.dart';
 
-import '../Utils/Models/OnboardingModel.dart';
+import '../../Utils/Models/OnboardingModel.dart';
 
 class OnboardingController extends GetxController {
   final RxList<OnboardingSlide> slides = <OnboardingSlide>[].obs;
