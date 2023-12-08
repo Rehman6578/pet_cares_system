@@ -6,20 +6,20 @@ import '../../Utils/Models/PetsModel.dart';
 class PetAppointmentController extends GetxController {
 
   // create doctor class object
-  final Rx<PetAppointment> appointment = Rx<PetAppointment>(
-    PetAppointment(
-      id: "",
-      petName: "",
-      ownerName: "",
-      appointmentDate: DateTime.now(),
-      appointmentTime: DateTime.now(),
-      reasonForVisit: "",
-      additionalNotes: "",
-      isConfirmed: false,
-      doctorName:'',
-      clinicName: '',
-    ),
-  );
+  // final Rx<PetAppointment> appointment = Rx<PetAppointment>(
+  //   PetAppointment(
+  //     id: "",
+  //     petName: "",
+  //     ownerName: "",
+  //     appointmentDate: DateTime.now(),
+  //     appointmentTime: DateTime.now(),
+  //     reasonForVisit: "",
+  //     additionalNotes: "",
+  //     isConfirmed: false,
+  //     doctorName:'',
+  //     clinicName: '',
+  //   ),
+  // );
 
 // Update appointment details based on user input
 

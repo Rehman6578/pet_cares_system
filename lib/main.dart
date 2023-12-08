@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:pet_cares_system/views/Dashboard/GroomingScreen.dart';
 import 'package:pet_cares_system/views/Dashboard/MainDashboard.dart';
 import 'package:pet_cares_system/views/Dashboard/Navbar_Screen/add_pet_detail.dart';
+import 'package:pet_cares_system/views/Dashboard/PetDatingScreen.dart';
 import 'package:pet_cares_system/views/OnboardingPages/onBoardingScreenWidget.dart';
 import 'package:pet_cares_system/views/ProfileScreens/profile.dart';
 import 'package:pet_cares_system/views/SearchScreens/nearme_veterinary_screen.dart';
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
             name: '/NearVeterinaryScreen', page: () => NearVeterinaryScreen()),
         GetPage(
             name: '/VeterinaryDocScreen', page: () => VeterinaryDocScreen()),
-        GetPage(name: '/GroomingScreen', page: () => GroomingScreen())
+        GetPage(name: '/GroomingScreen', page: () => GroomingScreen()),
+        GetPage(name: '/PetDatingScreen', page: () => PetDating()),
       ],
     );
   }

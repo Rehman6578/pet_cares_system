@@ -1,27 +1,96 @@
+import 'dart:html';
+import 'dart:ui';
+
 import 'package:pet_cares_system/Utils/Models/Doctor.dart';
 
-class PetAppointment {
-  final String id;
-  final String petName;
-  final String ownerName;
-  final DateTime appointmentDate;
-  final DateTime appointmentTime;
-  final String doctorName;
-  final String clinicName;
-  final String reasonForVisit;
-  final String additionalNotes;
-  final bool isConfirmed;
+class Pets {
+  late String id;
+  late String petName;
+  late String imageUrl;
+  late String ownerName;
+  late DateTime appointmentDate;
+  late DateTime appointmentTime;
+  late String doctorName;
+  late String clinicName;
+  late String reasonForVisit;
+  late String additionalNotes;
+  late bool isConfirmed;
+  late String petBreed;
+  late int petAge;
 
-  PetAppointment({
-    required this.id,
+
+  Pets({
     required this.petName,
-    required this.ownerName,
-    required this.appointmentDate,
-    required this.appointmentTime,
-    required this.doctorName,
-    required this.clinicName,
-    required this.reasonForVisit,
-    required this.additionalNotes,
-    required this.isConfirmed,
+    required this.imageUrl,
+    required this.petBreed,
+    required this.petAge,
   });
+
+
+  // create a list of pets which can access from anywhere
+   List<Pets> pets = [
+    Pets(
+      petName: 'Buddy ',
+      imageUrl: 'assets/images/onboarding1.png',
+      petBreed: 'Golden Retirver',
+      petAge: 2,
+    ),
+    Pets(
+      petName: 'Lucky',
+      imageUrl: 'assets/images/onboarding2.png',
+      petBreed: 'Labrador',
+      petAge: 1,
+    ),
+    Pets(
+      petName: 'Daisy',
+      imageUrl: 'assets/images/onboarding3.png',
+      petBreed: 'Pug',
+      petAge: 3,
+    ),
+    Pets(
+      petName: 'Bella',
+      imageUrl: 'assets/images/onboarding4.png',
+      petBreed: 'Poodle',
+      petAge: 4,
+    ),
+    Pets(
+      petName: 'Charlie',
+      imageUrl: 'assets/images/onboarding5.png',
+      petBreed: 'Bulldog',
+      petAge: 5,
+    ),
+    Pets(
+      petName: 'Max',
+      imageUrl: 'assets/images/onboarding6.png',
+      petBreed: 'Beagle',
+      petAge: 6,
+    ),
+    Pets(
+      petName: 'Molly',
+      imageUrl: 'assets/images/onboarding7.png',
+      petBreed: 'Pomeranian',
+      petAge: 7,
+    ),
+    Pets(
+      petName: 'Lucy',
+      imageUrl: 'assets/images/onboarding8.png',
+      petBreed: 'Chihuahua',
+      petAge: 8,
+    ),
+    Pets(
+      petName: 'Duke',
+      imageUrl: 'assets/images/onboarding9.png',
+      petBreed: 'Rottweiler',
+      petAge: 9,
+    ),
+    Pets(
+      petName: 'Rocky',
+      imageUrl: 'assets/images/onboarding10.png',
+      petBreed: 'German Shepherd',
+      petAge: 10,
+    ),
+  ];
+
+
+
 }
