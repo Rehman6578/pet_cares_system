@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:pet_cares_system/views/Dashboard/GroomingScreen.dart';
 import 'package:pet_cares_system/views/Dashboard/MainDashboard.dart';
 import 'package:pet_cares_system/views/Dashboard/Navbar_Screen/add_pet_detail.dart';
+import 'package:pet_cares_system/views/Dashboard/PetBoarding.dart';
 import 'package:pet_cares_system/views/Dashboard/PetDatingScreen.dart';
 import 'package:pet_cares_system/views/OnboardingPages/onBoardingScreenWidget.dart';
 import 'package:pet_cares_system/views/ProfileScreens/profile.dart';
@@ -13,15 +14,17 @@ import 'package:pet_cares_system/views/SplashScreen/SplashScreen.dart';
 import 'package:pet_cares_system/views/auth_screens/LoginScreen.dart';
 import 'package:pet_cares_system/views/auth_screens/RegisterScreen.dart';
 
-void main()  {
+import 'Utils/Models/PetBoarding.dart';
 
+void main() async {
+WidgetsFlutterBinding.ensureInitialized();
+Firebase.initializeApp();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -45,6 +48,7 @@ class MyApp extends StatelessWidget {
             name: '/VeterinaryDocScreen', page: () => VeterinaryDocScreen()),
         GetPage(name: '/GroomingScreen', page: () => GroomingScreen()),
         GetPage(name: '/PetDatingScreen', page: () => PetDating()),
+        GetPage(name: '/PetBoarding', page: () => PetBoardingScreen()),
       ],
     );
   }

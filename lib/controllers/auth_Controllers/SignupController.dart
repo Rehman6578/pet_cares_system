@@ -5,14 +5,6 @@ import 'package:get/get.dart';
 // create a singupcontroller class extends getxcontroller
 class SignupController extends GetxController {
 
-  late FirebaseAuth _auth;
-
-  @override
-  void onInit() {
-    super.onInit();
-    _auth = FirebaseAuth.instance;
-    // Other initialization code for the AuthController
-  }
 
   static SignupController get instance => Get.find();
 

@@ -30,33 +30,6 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
 
-    @override
-    void onBackPress() {
-      if (controller.currentIndex.value == 0) {
-        // show dialog to ask the user to quit or not
-        Get.defaultDialog(
-          title: "Confirm Exit",
-          middleText: "Are you sure you want to exit the app?",
-          actions: [
-            TextButton(
-              onPressed: () {
-                Get.back();
-              },
-              child: Text("Cancel"),
-            ),
-            TextButton(
-              onPressed: () {
-                Get.back();
-              },
-              child: Text("Confirm"),
-            ),
-          ],
-        );
-
-      } else {
-        controller.changePage(0);
-      }
-    }
 
     return Scaffold(
       body: Obx(() => _children[controller.currentIndex.value]),

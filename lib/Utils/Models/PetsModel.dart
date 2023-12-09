@@ -1,8 +1,3 @@
-import 'dart:html';
-import 'dart:ui';
-
-import 'package:pet_cares_system/Utils/Models/Doctor.dart';
-
 class Pets {
   late String id;
   late String petName;
@@ -17,7 +12,16 @@ class Pets {
   late bool isConfirmed;
   late String petBreed;
   late int petAge;
-
+  late String petGender;
+  late String petDOB;
+// create bool for vaccinated , spayed/neutered, and friendly with dogs, friendly with cats, friendly with kids, microchipped, purebred
+  late bool isVaccinated;
+  late bool isSpayed;
+  late bool isFriendlyWithDogs;
+  late bool isFriendlyWithCats;
+  late bool isFriendlyWithKids;
+  late bool isMicrochipped;
+  late bool isPurebred;
 
   Pets({
     required this.petName,
@@ -26,9 +30,8 @@ class Pets {
     required this.petAge,
   });
 
-
   // create a list of pets which can access from anywhere
-   List<Pets> pets = [
+  List<Pets> pets = [
     Pets(
       petName: 'Buddy ',
       imageUrl: 'assets/images/onboarding1.png',
@@ -90,7 +93,4 @@ class Pets {
       petAge: 10,
     ),
   ];
-
-
-
 }

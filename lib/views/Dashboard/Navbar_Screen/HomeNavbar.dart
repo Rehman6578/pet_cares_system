@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:pet_cares_system/WidgetCommon/Button.dart';
 import 'package:pet_cares_system/views/Dashboard/Navbar_Screen/PetTaxiScreen.dart';
 import 'package:pet_cares_system/views/Dashboard/Navbar_Screen/add_pet_detail.dart';
+import 'package:pet_cares_system/views/Dashboard/PetBoarding.dart';
+import 'package:pet_cares_system/views/Dashboard/PetDatingScreen.dart';
 import 'package:pet_cares_system/views/SearchScreens/nearme_veterinary_screen.dart';
 import '../../../WidgetCommon/mainContainer.dart';
 import '../../../const/images.dart';
@@ -177,19 +179,21 @@ class _home_nav extends State<home_nav> {
                       }),
                   CustomGridItem(
                       title: 'Pet boarding',
-                      assetImagePath: 'assets/images/icon.png',
+                      assetImagePath: 'assets/images/petboarding.png',
+                      onPressed: () {
+                        Get.to(PetBoardingScreen());
+                      }),
+                  CustomGridItem(
+                      title: 'Adoption',
+                      assetImagePath: 'assets/images/petadoption.png',
                       onPressed: () {}),
                   CustomGridItem(
-                      title: 'Veterinary',
-                      assetImagePath: 'assets/images/vet.png',
+                      title: 'Dog walking',
+                      assetImagePath: 'assets/images/dogwalking.png',
                       onPressed: () {}),
                   CustomGridItem(
-                      title: 'Veterinary',
-                      assetImagePath: 'assets/images/vet.png',
-                      onPressed: () {}),
-                  CustomGridItem(
-                      title: 'Veterinary',
-                      assetImagePath: 'assets/images/vet.png',
+                      title: 'Pet training',
+                      assetImagePath: 'assets/images/pettraining.png',
                       onPressed: () {}),
                   CustomGridItem(
                       title: 'Pet Taxi',
@@ -198,12 +202,14 @@ class _home_nav extends State<home_nav> {
                         Get.to(PetTaxiScreen());
                       }),
                   CustomGridItem(
-                      title: 'Veterinary',
+                      title: 'Pet Date',
                       assetImagePath: 'assets/images/petdate.png',
-                      onPressed: () {}),
+                      onPressed: () {
+                        Get.to(PetDating());
+                      }),
                   CustomGridItem(
-                      title: 'Veterinary',
-                      assetImagePath: 'assets/images/vet.png',
+                      title: 'Other',
+                      assetImagePath: 'assets/images/other.png',
                       onPressed: () {}),
                 ],
               ),

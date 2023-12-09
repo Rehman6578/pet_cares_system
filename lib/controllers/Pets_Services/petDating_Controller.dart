@@ -9,6 +9,7 @@ import 'package:pet_cares_system/const/images.dart';
 class petDatingController extends GetxController {
   RxList<Pets> pets = <Pets>[].obs;
 
+
   @override
   void onInit() {
     super.onInit();
@@ -27,6 +28,9 @@ class petDatingController extends GetxController {
 
     ]);
   }
+
+
+
 
 
 

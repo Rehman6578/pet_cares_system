@@ -41,15 +41,14 @@ class CustomGridItem extends StatelessWidget {
           children: [
             Image.asset(
               assetImagePath, // Path to the asset image
-              height: 30.0,
-              width: 30.0,
-              fit: BoxFit.cover,
+              height: 35.0,
+              width: 40.0,
             ),
-            const SizedBox(height: 2),
+            const SizedBox(height: 5),
             Text(
               title,
               style: const TextStyle(
-                fontSize: 10.0,
+                fontSize: 13.0,
                 // fontWeight: FontWeight.bold,
                 fontFamily: 'Encode Sans',
                 fontWeight: FontWeight.w400,
